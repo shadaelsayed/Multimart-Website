@@ -1,5 +1,6 @@
 {
   "name": "app",
+  "homepage": "https://shadaelsayed.github.io/Multimart-Website/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
+    "predeploy" : "npm run build" ,
+    "deploy" : "gh-pages -d dist" , 
     "start": "json-server --watch src/Server/db.json --port 5000"
   },
   "dependencies": {
