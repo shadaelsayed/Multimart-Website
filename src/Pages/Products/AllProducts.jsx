@@ -8,9 +8,11 @@ import { displayContext } from '../../context/DisplayProducts';
 import { Link } from 'react-router-dom';
 import useProduct from '../../hooks/UseProduct';
 
-export default function AllProducts() {
+
+export default function AllProducts({val}) {
 
   const { getData, products } = useContext(displayContext);
+  const {wishListHandler , cartHandler} = useProduct(val)
 
   const [search, setSearch] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -105,7 +107,7 @@ export default function AllProducts() {
               )}
 
               {filteredProducts.map((val) => {
-                const { wishListHandler, cartHandler } = useProduct(val)
+                
                 const finalPrice = val.price - (val.price * val.discount / 100);
 
                 return (

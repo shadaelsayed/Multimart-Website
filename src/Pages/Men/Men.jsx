@@ -10,6 +10,7 @@ import { displayContext } from '../../context/DisplayProducts';
 import { Link } from 'react-router-dom';
 import useProduct from '../../hooks/UseProduct';
 
+
 export default function Men({val}) {
   const {wishListHandler , cartHandler} = useProduct(val)
   const {getData , products} = useContext(displayContext) 
