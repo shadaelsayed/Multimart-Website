@@ -1,0 +1,17 @@
+.Cart {}
+.btnremove {
+  background-color: white !important;
+  color: red !important;
+  border: 1px solid red !important;
+  padding: 8px 10px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.btnremove:hover{
+  background-color: red !important;
+  color: white !important;
+}
+.btn:disabled{
+  cursor: not-allowed;
+  opacity: 0.3;
+}

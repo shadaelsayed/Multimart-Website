@@ -1,0 +1,52 @@
+.bigDeal {
+   background:linear-gradient(rgba(0, 0, 0, 0.8)), url(../../assets/images/hero-slider-three.webp) no-repeat center;
+    background-size: cover;
+    text-align: center;
+    height: 60vh;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.parent {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.parent div {
+  background: #f3f3f3;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90px;
+}
+
+.parent span {
+  font-size: 22px;
+  font-weight: bold;
+  display: block;
+}
+
+.parent p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .parent {
+    gap: 12px;
+  }
+
+  .parent div {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,183 @@
+.About {}
+/* About Section Styles */
+.about-section {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 3% auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.about-hero {
+  background-image: url(../../assets/images/hero-slider-one.webp);  
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: contain;
+  color: black ;
+  padding: 100px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+  max-width: 700px;
+  margin: 0 auto 40px;
+}
+
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-number {
+  display: block;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.stat-label {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Mission Section */
+.mission-section {
+  margin-bottom: 80px;
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+}
+
+.text-content p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.image-content img {
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .hero-content h1 {
+    font-size: 2.8rem;
+  }
+  
+  .section-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 0;
+    text-align: left;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(even) {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-year {
+    left: -40px;
+    right: auto;
+  }
+  
+  .timeline::before {
+    left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-stats {
+    gap: 30px;
+  }
+  
+  .stat-number {
+    font-size: 2.5rem;
+  }
+  
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .btn {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .timeline-item {
+    padding-left: 30px;
+  }
+  
+  .timeline-year {
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-year,
+  .timeline-item:nth-child(even) .timeline-year {
+    left: -30px;
+  }
+}

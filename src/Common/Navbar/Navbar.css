@@ -1,0 +1,60 @@
+
+/* Top bar styles */
+.bg-dark.text-light.py-1 {
+  background-color: #212529 !important;
+  color: #fff !important;
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+
+/* Phone number highlight */
+.bg-dark.text-light.py-1 span {
+  color: var(--main-color);
+}
+
+/* Navbar styles */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 1rem 0 !important;
+}
+
+/* Brand logo styling */
+.navbar-brand {
+  font-weight: 700 !important;
+  font-size: 1.75rem !important;
+}
+
+.navbar-brand span {
+  color: var(--main-color);
+}
+
+/* Navigation links */
+.nav-link {
+  font-weight: 700 !important;
+}
+
+.nav-link.active {
+  color: var(--main-color) !important;
+  
+}
+
+/* Auth links styling */
+.me-5 a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.me-5 a:hover {
+  color: var(--main-color);
+}
+
+.loader {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
